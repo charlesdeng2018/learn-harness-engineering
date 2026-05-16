@@ -123,23 +123,23 @@ A harness has five subsystems:
     ┌─────────────────────────────────────────────────────────────────┐
     │                        THE HARNESS                              │
     │                                                                 │
-    │   ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐ │
-    │   │ Instructions  │  │    State     │  │   Verification       │ │
-    │   │              │  │              │  │                      │ │
-    │   │ AGENTS.md    │  │ progress.md  │  │ tests + lint         │ │
-    │   │ CLAUDE.md    │  │ feature_list │  │ type-check           │ │
-    │   │ feature_list │  │ git log      │  │ smoke runs           │ │
-    │   │ docs/        │  │ session hand │  │ e2e pipeline         │ │
-    │   └──────────────┘  └──────────────┘  └──────────────────────┘ │
+    │   ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐  │
+    │   │ Instructions │  │    State     │  │   Verification       │  │
+    │   │              │  │              │  │                      │  │
+    │   │ AGENTS.md    │  │ progress.md  │  │ tests + lint         │  │
+    │   │ CLAUDE.md    │  │ feature_list │  │ type-check           │  │
+    │   │ feature_list │  │ git log      │  │ smoke runs           │  │
+    │   │ docs/        │  │ session hand │  │ e2e pipeline         │  │
+    │   └──────────────┘  └──────────────┘  └──────────────────────┘  │
     │                                                                 │
-    │   ┌──────────────┐  ┌──────────────────────────────────────┐   │
-    │   │    Scope     │  │         Session Lifecycle             │   │
-    │   │              │  │                                      │   │
-    │   │ one feature  │  │ init.sh at start                     │   │
-    │   │ at a time   │  │ clean-state checklist at end          │   │
-    │   │ definition   │  │ handoff note for next session        │   │
-    │   │ of done      │  │ commit only when safe to resume      │   │
-    │   └──────────────┘  └──────────────────────────────────────┘   │
+    │   ┌──────────────┐  ┌──────────────────────────────────────┐    │
+    │   │    Scope     │  │         Session Lifecycle            │    │
+    │   │              │  │                                      │    │
+    │   │ one feature  │  │ init.sh at start                     │    │
+    │   │ at a time   │  │ clean-state checklist at end          │    │
+    │   │ definition   │  │ handoff note for next session        │    │
+    │   │ of done      │  │ commit only when safe to resume      │    │
+    │   └──────────────┘  └──────────────────────────────────────┘    │
     │                                                                 │
     └─────────────────────────────────────────────────────────────────┘
 
