@@ -136,7 +136,7 @@ A harness has five subsystems:
     │   │    Scope     │  │         Session Lifecycle            │    │
     │   │              │  │                                      │    │
     │   │ one feature  │  │ init.sh at start                     │    │
-    │   │ at a time   │  │ clean-state checklist at end          │    │
+    │   │ at a time    │  │ clean-state checklist at end         │    │
     │   │ definition   │  │ handoff note for next session        │    │
     │   │ of done      │  │ commit only when safe to resume      │    │
     │   └──────────────┘  └──────────────────────────────────────┘    │
@@ -235,14 +235,14 @@ All six course projects revolve around the same product: **an Electron-based per
     ┌─────────────────────────────────────────────────────┐
     │               Knowledge Base Desktop App            │
     │                                                     │
-    │  ┌──────────────┐  ┌──────────────────────────────┐│
+    │  ┌───────────────┐  ┌──────────────────────────────┐│
     │  │ Document List │  │       Q&A Panel              ││
-    │  │              │  │                              ││
-    │  │ doc-001.md   │  │  Q: What is harness eng?    ││
-    │  │ doc-002.md   │  │  A: The environment built    ││
-    │  │ doc-003.md   │  │     around an agent model... ││
-    │  │ ...          │  │     [citation: doc-002.md]   ││
-    │  └──────────────┘  └──────────────────────────────┘│
+    │  │               │  │                              ││
+    │  │ doc-001.md    │  │  Q: What is harness eng?     ││
+    │  │ doc-002.md    │  │  A: The environment built    ││
+    │  │ doc-003.md    │  │     around an agent model... ││
+    │  │ ...           │  │     [citation: doc-002.md]   ││
+    │  └───────────────┘  └──────────────────────────────┘│
     │                                                     │
     │  ┌─────────────────────────────────────────────────┐│
     │  │ Status Bar: 42 docs | 38 indexed | last sync 3m ││
@@ -398,13 +398,13 @@ One of the core ideas in this course: **the agent's session should follow a stru
     ======================
 
     ┌──────────────────────────────────────────────────────────────────┐
-    │  START                                                          │
+    │  START                                                           │
     │                                                                  │
-    │  1. Agent reads AGENTS.md / CLAUDE.md                           │
-    │  2. Agent runs init.sh (install, verify, health check)          │
-    │  3. Agent reads claude-progress.md (what happened last time)    │
-    │  4. Agent reads feature_list.json (what's done, what's next)    │
-    │  5. Agent checks git log (recent changes)                       │
+    │  1. Agent reads AGENTS.md / CLAUDE.md                            │
+    │  2. Agent runs init.sh (install, verify, health check)           │
+    │  3. Agent reads claude-progress.md (what happened last time)     │
+    │  4. Agent reads feature_list.json (what's done, what's next)     │
+    │  5. Agent checks git log (recent changes)                        │
     │                                                                  │
     │  SELECT                                                          │
     │                                                                  │
@@ -414,17 +414,17 @@ One of the core ideas in this course: **the agent's session should follow a stru
     │  EXECUTE                                                         │
     │                                                                  │
     │  8. Agent implements the feature                                 │
-    │  9. Agent runs verification (tests, lint, type-check)           │
-    │  10. If verification fails: fix and re-run                      │
-    │  11. If verification passes: record evidence                    │
+    │  9. Agent runs verification (tests, lint, type-check)            │
+    │  10. If verification fails: fix and re-run                       │
+    │  11. If verification passes: record evidence                     │
     │                                                                  │
     │  WRAP UP                                                         │
     │                                                                  │
-    │  12. Agent updates claude-progress.md                           │
-    │  13. Agent updates feature_list.json                            │
-    │  14. Agent records what's still broken or unverified            │
-    │  15. Agent commits (only when safe to resume)                   │
-    │  16. Agent leaves clean restart path for next session           │
+    │  12. Agent updates claude-progress.md                            │
+    │  13. Agent updates feature_list.json                             │
+    │  14. Agent records what's still broken or unverified             │
+    │  15. Agent commits (only when safe to resume)                    │
+    │  16. Agent leaves clean restart path for next session            │
     │                                                                  │
     └──────────────────────────────────────────────────────────────────┘
 
