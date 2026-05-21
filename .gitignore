@@ -32,3 +32,4 @@ dist/
 ### Local development environment files and worklog files
 .env.local
 worklog*.*
+Worklog*.*
