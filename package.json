@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "description": "Course docs for Learn Harness Engineering powered by VitePress.",
   "scripts": {
-    "dev": "vitepress dev docs",
+    "dev": "vitepress dev docs --port 33000",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "docs:dev": "vitepress dev docs",
+    "docs:dev": "vitepress dev docs --port 33001",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "lecture:run": "tsx",
